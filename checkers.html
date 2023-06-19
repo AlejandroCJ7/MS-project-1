@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="checkers.css"/>
+
+    <script defer src="checkers.js"></script>
+    <title>Checkers</title>
+</head>
+<body>
+    <main>
+        
+        <table>
+            <tr>
+                <td class="noPieceHere"></td>
+                <!-- each class that has a value of 'noPieceHere' indicates an empty square on the checkers board. this also will be represented as a 'null' on the visual representation of the checkers board in the javascript file.-->
+                <td><p class="red-piece" id="0"></p></td>
+                <!--for the class with 'red-piece' as the value will indicate a red piece on the board and the id with the value of a number will indicate their place and order on which they are set in the visual board in the JS file -->
+                <td class="noPieceHere"></td>
+                <td><p class="red-piece" id="1"></p></td> <!--the classes with the 'redPiece' as the value will be in a <p></p> tag to better distinct them from the black pieces-->
+                <td class="noPieceHere"></td>
+                <td><p class="red-piece" id="2"></p></td>
+                <td class="noPieceHere"></td>
+                <td><p class="red-piece" id="3"></p></td><!--each <tr> tag represents going horizontal Across the board-->
+            </tr>
+            <tr>
+                <td><p class="red-piece" id="4"></p></td>
+                <td class="noPieceHere"></td>
+                <td><p class="red-piece" id="5"></p></td>
+                <td class="noPieceHere"></td>
+                <td><p class="red-piece" id="6"></p></td>
+                <td class="noPieceHere"></td>
+                <td><p class="red-piece" id="7"></p></td>
+                <td class="noPieceHere"></td>
+            </tr>
+            <tr>
+                <td class="noPieceHere"></td>
+                <td><p class="red-piece" id="8"></p></td>
+                <td class="noPieceHere"></td>
+                <td><p class="red-piece" id="9"></p></td>
+                <td class="noPieceHere"></td>
+                <td><p class="red-piece" id="10"></p></td>
+                <td class="noPieceHere"></td>
+                <td><p class="red-piece" id="11"></p></td>
+            </tr>
+            <tr>
+                <td></td><!--indicates that there is no red or black piece at the start of the game-->
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+            </tr>
+            <tr>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+                <td class="noPieceHere"></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><span class="black-piece" id="12"></span></td> <!--the blackPiece are in <span> tags to distinguish from the redpieces-->
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece" id="13"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece" id="14"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece" id="15"></span></td>
+                <td class="noPieceHere"></td>
+            </tr>
+            <tr>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece" id="16"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece" id="17"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece" id="18"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece" id="19"></span></td>
+            </tr>
+            <tr>
+                <td><span class="black-piece" id="20"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece" id="21"></span></td>
+                <td class="noPieceHere">
+                <td><span class="black-piece" id="22"></span></td>
+                <td class="noPieceHere"></td>
+                <td><span class="black-piece" id="23"></span></td>
+                <td class="noPieceHere"></td>
+            </tr>
+        </table>
+
+        <!-- in this bottom section of the web game is where we tell the player whos turn is it in the game-->
+        <div class="red-turn-text mobile"><!--this 'reds turn text mobile' will change to a lighter shade to show the opposite player to move their piece and same for the black piece below-->
+            Reds turn
+        </div>
+        <div class="desktop">
+            <div class="red-turn-text"><!-- this is the default text color of black to show whos turn it is to go and same for the black piece below-->
+                Reds turn
+            </div>
+            <p id="divider">|</p><!--the divider is to show the side of the red and black piece-->
+            <div class="black-turn-text">
+                Blacks turn
+            </div>
+        </div>
+        <div class="black-turn-text mobile">
+            Blacks turn
+        </div>
+    </main>
+</body>
+</html>
