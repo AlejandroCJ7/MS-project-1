@@ -12,4 +12,4 @@ The controls for playing Checkers are quite simple. Here's a step-by-step guide 
 6. Continue moving and capturing: Players take turns moving their pieces and attempting to capture their opponent's pieces. Captures are mandatory if available.
 7. The game is over when the opposite player catches all of the other players pieces and a text is displayed as 'red wins' or 'black wins'
 
-[Click Here If You Want To Play The Game!]( )
+[Click Here If You Want To Play The Game!]( https://alejandrocj7.github.io/MS-project-1/checkers.html)
